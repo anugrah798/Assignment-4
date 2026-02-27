@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anugrah T | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <h1 class="logo">Anugrah T</h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero">
+        <h2>Hi, I'm Anugrah T</h2>
+        <p>Mechanical Engineer | Aspiring Full Stack Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+
+        <img src="https://img.freepik.com/premium-photo/isolated-businessman-character-avatar-professional-branding_1029469-183664.jpg?w=996"
+            alt="Profile Photo" class="profile-img">
+
+        <p>
+            Hello! I am <strong>Anugrah T</strong>, a Mechanical Engineer and aspiring
+            Full Stack Developer. I am passionate about web development and
+            continuously improving my technical skills.
+        </p>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <img src="https://static.wixstatic.com/media/f4e6a8_a6f3a759d59a493bba6553521ab9ceff.jpg/v1/fill/w_427,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f4e6a8_a6f3a759d59a493bba6553521ab9ceff.jpg"
+                    alt="Project 1">
+                <h3>Pressure Valve Mechanism</h3>
+                <p>Designed an intake manifold pressure releasing valve mechanism.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://c8.alamy.com/comp/2M51JRD/personal-portfolio-with-profile-data-resume-or-self-improvement-to-attract-clients-and-employers-in-flat-cartoon-hand-drawn-templates-illustration-2M51JRD.jpg"
+                    alt="Project 2">
+                <h3>Portfolio Website</h3>
+                <p>Created a static portfolio website using HTML & CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="https://cc.sj-cdn.net/instructor/kt1ejklh2ngf-microchip-technology/courses/saqjuk1nd95g/promo-image.1631904674.png"
+                    alt="Project 3">
+                <h3>C Calculator</h3>
+                <p>Developed a calculator program using C programming language.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Anugrah T | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

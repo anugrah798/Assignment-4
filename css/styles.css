@@ -1,0 +1,255 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 1.2rem 2rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #64ffda;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: #64ffda;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* ===== ABOUT ===== */
+.profile-img {
+    width: 180px;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+    background: #e9ecef;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    width: 280px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.project-card img {
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== CONTACT ===== */
+.contact-form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 0.8rem;
+    background: #2c5364;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #64ffda;
+    color: black;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #0f2027;
+    color: white;
+    padding: 1rem;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* ===== MOBILE (≤768px) ===== */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background: #0f2027;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ===== TABLET (769px–1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .project-container {
+        justify-content: center;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ===== DESKTOP (>1024px) ===== */
+@media (min-width: 1025px) {
+
+    .contact-form {
+        width: 60%;
+    }
+}
